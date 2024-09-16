@@ -19,6 +19,10 @@ const publicSharedLinksEnabled =
   (process.env.ALLOW_SHARED_LINKS_PUBLIC === undefined ||
     isEnabled(process.env.ALLOW_SHARED_LINKS_PUBLIC));
 
+const teacherOptionsEnabled =
+    process.env.ALLOW_TEACHER_OPTIONS === undefined || isEnabled(process.env.ALLOW_TEACHER_OPTIONS);
+  
+
 router.get('/', async function (req, res) {
   const cache = getLogStores(CacheKeys.CONFIG_STORE);
   const cachedStartupConfig = await cache.get(CacheKeys.STARTUP_CONFIG);
@@ -71,6 +75,7 @@ router.get('/', async function (req, res) {
       helpAndFaqURL: process.env.HELP_AND_FAQ_URL || 'https://librechat.ai',
       interface: req.app.locals.interfaceConfig,
       modelSpecs: req.app.locals.modelSpecs,
+      teacherOptionsEnabled,
       sharedLinksEnabled,
       publicSharedLinksEnabled,
       analyticsGtmId: process.env.ANALYTICS_GTM_ID,

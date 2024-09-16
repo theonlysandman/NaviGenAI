@@ -196,7 +196,7 @@ export default {
   com_ui_entries: 'Entries',
   com_ui_pay_per_call: 'All AI conversations in one place. Pay per call and not per month',
   com_ui_new_footer: 'All AI conversations in one place.',
-  com_ui_latest_footer: 'Every AI for Everyone.',
+  com_ui_latest_footer: 'Your personal patient tutor.',
   com_ui_enter: 'Enter',
   com_ui_submit: 'Submit',
   com_ui_none_selected: 'None selected',
@@ -807,4 +807,12 @@ export default {
   com_ui_decline: 'I do not accept',
   com_ui_terms_and_conditions: 'Terms and Conditions',
   com_ui_no_terms_content: 'No terms and conditions content to display',
+  com_ui_teacher_options: 'Teacher Options',
+  com_ui_teacher_options_title: 'Students Chat Details',
+  com_ui_teacher_options_error: 'We have an unknown error. Sorry',
+  com_ui_teacher_options_overview_tab: 'Overview.',
+  com_ui_teacher_options_details_tab: 'Detailed View.',
+  com_ui_teacher_options_chart_tab: 'Chart View.',
+
+
 };

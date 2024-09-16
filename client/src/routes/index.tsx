@@ -6,6 +6,9 @@ import {
   ResetPassword,
   VerifyEmail,
   ApiErrorWatcher,
+  OnboardUniversity,
+  OnboardClass,
+  OnboardStatus,
 } from '~/components/Auth';
 import { AuthContextProvider } from '~/hooks/AuthContext';
 import StartupLayout from './Layouts/Startup';
@@ -49,6 +52,18 @@ export const router = createBrowserRouter([
   {
     path: 'verify',
     element: <VerifyEmail />,
+  },
+  {
+    path: 'onboard',
+    element: <OnboardUniversity />,
+  },
+  {
+    path: 'onboard/class',
+    element: <OnboardClass />,
+  },
+  {
+    path: 'onboard/status',
+    element: <OnboardStatus />,
   },
   {
     element: <AuthLayout />,
