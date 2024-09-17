@@ -13,12 +13,19 @@ jobs:
         include:
           - target: api-build
             file: Dockerfile.multi
-            image_name: librechat-api
+            image_name: navigen-ai-api
           - target: node
             file: Dockerfile
-            image_name: librechat
+            image_name: navigen-ai
 
     steps:
+
+      - name: Debug info
+        run: |
+          echo "Tag-Images: ${{ image_name }}"
+          echo "Image Name: ${{ matrix.image_name }}"
+          echo "Latest Tag: ${{ env.LATEST_TAG }}"
+      
       # Check out the repository
       - name: Checkout
         uses: actions/checkout@v4
