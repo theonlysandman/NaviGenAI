@@ -2322,3 +2322,21 @@ button.scroll-convo {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
+
+nav#controls-nav,
+div[id="controls-nav"] {
+  display: none !important;
+}
+
+
+/* Dalhousie Hides 
+#presets-button {
+  display: none !important;
+}
+#parameters-button {
+  display: none !important;
+}
+*/
+#add-multi-conversation-button {
+  display: none !important;
+}

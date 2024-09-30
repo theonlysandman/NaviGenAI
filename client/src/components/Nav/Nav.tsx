@@ -189,12 +189,14 @@ const Nav = ({
                             {isSearchEnabled === true && (
                               <SearchBar clearSearch={clearSearch} isSmallScreen={isSmallScreen} />
                             )}
+                            
+{/* Dal Demo 
                             <BookmarkNav
                               tags={tags}
                               setTags={setTags}
                               isSmallScreen={isSmallScreen}
                             />
-                          </>
+ */}                          </>
                         }
                       />
                     )}

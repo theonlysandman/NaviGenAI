@@ -94,7 +94,7 @@ const BookmarkMenu: FC = () => {
 
   return (
     <>
-      <Menu as="div" className="group relative">
+    {/*   <Menu as="div" className="group relative">
         {({ open }) => (
           <>
             <MenuButton
@@ -122,7 +122,7 @@ const BookmarkMenu: FC = () => {
           </>
         )}
       </Menu>
-      <BookmarkEditDialog
+     */}  <BookmarkEditDialog
         context="BookmarkMenu - BookmarkEditDialog"
         conversation={conversation}
         tags={tags}
