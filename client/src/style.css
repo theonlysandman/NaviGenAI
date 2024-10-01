@@ -2437,3 +2437,9 @@ button.scroll-convo {
   scale: 1;
   translate: 0;
 }
+#controls-nav.sidenav {
+  display: none !important;
+}
+#add-multi-conversation-button {
+  display: none !important;
+}
