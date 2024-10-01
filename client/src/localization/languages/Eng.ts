@@ -816,6 +816,4 @@ export default {
   com_ui_teacher_options_overview_tab: 'Overview.',
   com_ui_teacher_options_details_tab: 'Detailed View.',
   com_ui_teacher_options_chart_tab: 'Chart View.',
-
-
 };
