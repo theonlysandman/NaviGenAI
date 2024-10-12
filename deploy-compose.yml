@@ -27,7 +27,7 @@ services:
     volumes:
       - type: bind
         source: ./navigen.dal.yaml
-        target: /app/navigen.dal.yaml
+        target: /app/api/navigen.dal.yaml
       - ./images:/app/client/public/images
       - ./logs:/app/api/logs
 
