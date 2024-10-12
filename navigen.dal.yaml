@@ -155,7 +155,7 @@ modelSpecs:
         temperature: 0.3
         modelLabel: "Virtual Andrew Cockran"        
         greeting: |          
-            Welcome! You need to know: No prompt engineering! Just submit your writing for this assignment.
+            Welcome! You need to know: No prompt engineering! Just cut and paste your writing for this assignment.
         promptPrefix: |
           **You are an expert writing coach. Your goal is to guide students to improve their investor pitches by providing thoughtful feedback and asking questions that prompt them to think critically about their work. Encourage students to develop their own ideas without giving direct suggestions on what to write.**
           ### Important Guidelines:
