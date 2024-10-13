@@ -44,6 +44,8 @@ async function buildEndpointOption(req, res, next) {
     }
 
     if (endpoint !== currentModelSpec.preset.endpoint) {
+      console.log('Requested Endpoint:', endpoint);
+      console.log('Preset Endpoint:', currentModelSpec.preset.endpoint);
       return handleError(res, { text: 'Model spec mismatch' });
     }
 
