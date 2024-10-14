@@ -34,6 +34,8 @@ async function buildEndpointOption(req, res, next) {
     const { list } = req.app.locals.modelSpecs;
     const { spec } = parsedBody;
 
+    console.log('spec:', spec);
+
     if (!spec) {
       return handleError(res, { text: 'No model spec selected' });
     }
@@ -44,9 +46,8 @@ async function buildEndpointOption(req, res, next) {
     }
 
     if (endpoint !== currentModelSpec.preset.endpoint) {
-      console.log('Requested Endpoint:', endpoint);
-      console.log('Preset Endpoint:', currentModelSpec.preset.endpoint);
-      return handleError(res, { text: 'Model spec mismatch' });
+      const errorMessage = `Model spec mismatch: Requested endpoint: ${endpoint}, Expected endpoint: ${currentModelSpec.preset.endpoint}`;
+      return handleError(res, { text: errorMessage });
     }
 
     if (
